@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VoteFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:text="Voting is closed!"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:textColor="#565656"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"/>
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="130dp"
+       android:padding="10dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="5dp"
+           android:padding="5dp"
+           android:orientation="horizontal"
+
+           android:id="@+id/mainvote">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/contain"
+               android:background="@drawable/layout_corner"
+               android:backgroundTint="#E4E4F9"
+               android:padding="30dp"
+               android:layout_marginRight="20dp"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="President"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="23sp"
+                   android:textStyle="bold|italic"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/title"/>
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/Pres_recycle"
+                   android:layout_below="@+id/title"/>
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/vice_contain"
+               android:layout_marginRight="15dp"
+               android:background="@drawable/layout_corner"
+               android:backgroundTint="#E4E4F9"
+               android:padding="30dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Vice President"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="23sp"
+                   android:textStyle="bold|italic"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/vice_title"/>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/VicePres_recycle"
+                   android:layout_below="@+id/vice_title"/>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/secretary_contain"
+               android:background="@drawable/layout_corner"
+               android:backgroundTint="#E4E4F9"
+               android:padding="30dp"
+               android:maxHeight="300dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Secretary"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="23sp"
+                   android:textStyle="bold|italic"
+                   android:layout_marginBottom="20dp"
+                   android:id="@+id/secretary_title"/>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/Secretary_recycle"
+                   android:layout_below="@+id/secretary_title"/>
+           </RelativeLayout>
+
+
+
+
+
+       </LinearLayout>
+   </HorizontalScrollView>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/past_record"
+        android:title="Past Records"
+         />
+    <item android:id="@+id/request"
+        android:title="Candidacy request"
+        android:titleTextColor="@android:color/black"
+       />
+    <item android:id="@+id/notif"
+        android:title="Notifications"/>
+    <item android:id="@+id/eligib"
+        android:title="Eligibility"/>
+</menu>

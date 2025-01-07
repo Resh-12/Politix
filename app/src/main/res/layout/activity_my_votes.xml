@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastRecords"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/pastaction"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action"
+        android:text="My Votes"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        tools:ignore="MissingConstraints,MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pastaction"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/year23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/layout_corner"
+                android:backgroundTint="#E4E4F9"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="My Votes"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/preslayout23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_corner"
+                    android:padding="15dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pimg23"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/userr" />
+
+                    <TextView
+                        android:id="@+id/pname23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/pimg23"
+                        android:layout_marginTop="20dp"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pres23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pname23"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/pimg23"
+                        android:text="President"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vplayout23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_corner"
+                    android:padding="15dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/vpimg23"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/userr" />
+
+                    <TextView
+                        android:id="@+id/vpname23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/vpimg23"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/vpres23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vpname23"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/vpimg23"
+                        android:text="Vice President"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seclayout23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_corner"
+                    android:padding="15dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/secimg23"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/userr" />
+
+                    <TextView
+                        android:id="@+id/secname23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/secimg23"
+                        android:layout_marginTop="20dp"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/sec23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/secname23"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/secimg23"
+                        android:text="Secretary"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/adminhome"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Politix"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentTop="true" />
+
+    <!-- Menu Items -->
+    <LinearLayout
+        android:id="@+id/candidacy_requests_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminhome"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/can_req_img"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:src="@drawable/cand_requests" />
+
+        <TextView
+            android:id="@+id/can_req"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Candidacy Requests"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/can_req_arrow"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/candidacy_requests_section"
+        android:background="#B6AEAE"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="45dp"/>
+
+    <!-- Manage Candidates -->
+    <LinearLayout
+        android:id="@+id/manage_candidates_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/manage_candidates_img"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:src="@drawable/manage_cand" />
+
+        <TextView
+            android:id="@+id/manage_candidates_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Manage Candidates"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/manage_candidates_arrow"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/manage_candidates_section"
+        android:background="#B6AEAE"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="45dp"/>
+
+    <!-- Vote Count -->
+    <LinearLayout
+        android:id="@+id/vote_count_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/vote_count_img"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:src="@drawable/voting" />
+
+        <TextView
+            android:id="@+id/vote_count_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Vote Count"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/vote_count_arrow"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/vote_count_section"
+        android:background="#B6AEAE"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="45dp"/>
+
+    <!-- Notify -->
+    <LinearLayout
+        android:id="@+id/notify_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/notify_img"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:src="@drawable/notify" />
+
+        <TextView
+            android:id="@+id/notify_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Notify"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/notify_arrow"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/notify_section"
+        android:background="#B6AEAE"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="45dp"/>
+
+    <!-- Logout -->
+    <LinearLayout
+        android:id="@+id/logout_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider4"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logout_img"
+            android:layout_width="41dp"
+            android:layout_height="44dp"
+            android:src="@drawable/log_out" />
+
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logout_arrow"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:background="@drawable/toggle_check"
+        android:textOff="Voting is closed"
+        android:textOn="Voting is open"
+        android:text="Disable Voting"
+        android:textColor="#545252"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logout_section"
+        android:layout_centerHorizontal="true"
+        android:textSize="18.5sp"
+        />
+
+
+
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toplayout"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
+        android:background="@drawable/layout_bg"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/edit_profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/editimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/textedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/editimg"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="10dp"
+                android:text="Edit Profile"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edit_profile_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/changep_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_profile_layout"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/changepimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lock" />
+
+            <TextView
+                android:id="@+id/textchangep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/changepimg"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="10dp"
+                android:text="Change Password"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/changep_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/myvotes_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changep_layout"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/myvotesimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/voting" />
+
+            <TextView
+                android:id="@+id/textmyvote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/myvotesimg"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="10dp"
+                android:text="My Votes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/myvotes_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/support_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myvotes_layout"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/supportimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:id="@+id/textsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/supportimg"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="10dp"
+                android:text="Support and Help"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/support_layout"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/support_layout"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/logoutimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/log" />
+
+            <TextView
+                android:id="@+id/textlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/logoutimg"
+                android:drawableEnd="@drawable/next"
+                android:drawablePadding="10dp"
+                android:text="Logout"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+   </RelativeLayout>
+</ScrollView>
+</FrameLayout>

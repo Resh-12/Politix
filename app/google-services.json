@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "739198262959",
+    "firebase_url": "https://politix-9a641-default-rtdb.firebaseio.com",
+    "project_id": "politix-9a641",
+    "storage_bucket": "politix-9a641.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739198262959:android:41e5b38747489555577e5a",
+        "android_client_info": {
+          "package_name": "com.example.menus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoPVitz93FNSGq1Bw5Nm9UdhGRp0ii2O4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739198262959:android:2c3c7ed63117d282577e5a",
+        "android_client_info": {
+          "package_name": "com.example.politix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoPVitz93FNSGq1Bw5Nm9UdhGRp0ii2O4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

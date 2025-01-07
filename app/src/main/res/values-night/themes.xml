@@ -1,0 +1,28 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.Politix" parent="Theme.Material3.DayNight">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_dark_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+<!--</resources>-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Politix" parent="Theme.Material3.DayNight">
+        <!-- Disable default Action Bar -->
+        <item name="windowActionBar">false</item>
+
+        <!-- Enable custom Toolbar as Action Bar -->
+        <item name="windowNoTitle">true</item>
+
+        <!-- Set status bar color -->
+        <item name="android:statusBarColor">#BF0c0c68</item>
+
+        <!-- Text color settings -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!-- App-specific theme -->
+    <style name="Theme.Politix" parent="Base.Theme.Politix"/>
+</resources>

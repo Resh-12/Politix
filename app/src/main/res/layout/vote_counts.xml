@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VoteCountActivity"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/pastaction"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action"
+        android:textStyle="italic"
+        android:text="Vote Counts"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        tools:ignore="MissingConstraints,MissingConstraints"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pastaction"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:id="@+id/year23"
+                android:background="@drawable/layout_corner"
+                android:backgroundTint="#E4E4F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="President"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/recyclepres"-->
+                <!--                    android:layout_marginTop="10dp"/>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/preslay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pres1img"
+                        android:layout_width="71dp"
+                        android:layout_height="84dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/circular_img"
+                        android:src="@drawable/vamshi" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/pres1name"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/pres1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="vamshi"/>
+                    <TextView
+                        android:id="@+id/pres1cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pres1name"
+                        android:layout_toRightOf="@+id/pres1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="7" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/pres2lay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pres2img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/insha"
+                        android:background="@drawable/circular_img" />
+
+                    <TextView
+                        android:id="@+id/pres2name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/pres2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="manashree" />
+
+                    <TextView
+                        android:id="@+id/pres2cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pres2name"
+                        android:layout_toRightOf="@id/pres2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="4
+" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:id="@+id/year22"
+                android:layout_below="@id/year23"
+                android:background="@drawable/layout_corner"
+                android:backgroundTint="#E4E4F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice President"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/recyclevp"-->
+                <!--                    android:layout_marginTop="10dp"/>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/vplay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/vp1img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/reshma"
+                        android:background="@drawable/circular_img" />
+
+                    <TextView
+                        android:id="@+id/vp1name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vp1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="reshma" />
+
+                    <TextView
+                        android:id="@+id/vp1cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vp1name"
+                        android:layout_toRightOf="@+id/vp1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/vp2lay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/vp2img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/aman"
+                        android:background="@drawable/circular_img" />
+
+                    <TextView
+                        android:id="@+id/vp2name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/vp2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="aman" />
+
+                    <TextView
+                        android:id="@+id/vp2cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vp2name"
+                        android:layout_toRightOf="@id/vp2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="8" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:id="@+id/year21"
+                android:layout_below="@id/year22"
+                android:background="@drawable/layout_corner"
+                android:backgroundTint="#E4E4F9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secretary"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/recyclesec"-->
+                <!--                    android:layout_marginTop="10dp"/>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/seclay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/sec1img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/gou"
+                        android:background="@drawable/circular_img" />
+
+                    <TextView
+                        android:id="@+id/sec1name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/sec1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="gautham" />
+
+                    <TextView
+                        android:id="@+id/sec1cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sec1name"
+                        android:layout_toRightOf="@+id/sec1img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="8" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/sec2lay"
+                    android:background="@drawable/layout_corner"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/sec2img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/insha"
+                        android:background="@drawable/circular_img" />
+
+                    <TextView
+                        android:id="@+id/sec2name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/sec2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Insha" />
+
+                    <TextView
+                        android:id="@+id/sec2cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sec2name"
+                        android:layout_toRightOf="@id/sec2img"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="10" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
